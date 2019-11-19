@@ -38,7 +38,7 @@ class ChatScreenState extends State<ChatScreen> {
         ));
   }
 
-  void _handleSubmit(String text) {
+  void _handleSubmitted(String text) {
     _textEditingController.clear();
   }
 }
