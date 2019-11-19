@@ -37,4 +37,8 @@ class ChatScreenState extends State<ChatScreen> {
           decoration: new InputDecoration.collapsed(hintText: "Send a message"),
         ));
   }
+
+  void _handleSubmit(String text) {
+    _textEditingController.clear();
+  }
 }
