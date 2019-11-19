@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/semantics.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,11 +14,16 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class ChatScreen extends StatelessWidget {
+class ChatScreen extends StatefulWidget {
+  @override
+  State createState() => new ChatScreenState();
+}
+
+class ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text('チャット')),
+      appBar: new AppBar(title: new Text("チャット")),
     );
   }
 }
